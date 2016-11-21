@@ -48,7 +48,11 @@ void Canal::setTiempoMaximoTransmision(string tiempo){
     this->tiempoMaximoTransmision = tiempo;
 }
 
-void Canal::setTiempoMaximoTransmision(string tiempo){
+void Canal::setTiempoMinimoTransmision(string tiempo){
+    this->tiempoMinimoTransmision = tiempo;
+}
+
+void Canal:: (string tiempo){
     this->tiempoMaximoTransmision = tiempo;
 }
 
