@@ -12,7 +12,7 @@ void Anuncio::setNombreEmpresa(string nombre){
     this->nombreEmpresa = nombre;
 }
 
-void Anuncio::setTiempoDuracion(string tiempo){
+void Anuncio::setTiempoDuracion(int tiempo){
     this->tiempoDuracion = tiempo;
 }
 
@@ -28,6 +28,6 @@ string Anuncio::getCodigoAnuncio(){
     return codigoAnuncio;
 };
 
-string Anuncio::getTiempoDuracion(){
+int Anuncio::getTiempoDuracion(){
     return tiempoDuracion;
 };

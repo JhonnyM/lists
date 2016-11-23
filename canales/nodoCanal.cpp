@@ -22,7 +22,7 @@ void NodoCanal::setDato(Canal x){
 	dato = x;
 }
 
-int NodoCanal::getDato(){
+Canal NodoCanal::getData(){
 	return dato;
 }
 

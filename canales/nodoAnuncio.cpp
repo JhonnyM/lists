@@ -14,15 +14,11 @@ void NodoAnuncio::setSig(NodoAnuncio *n){
 	siguiente = n;
 }
 
-void NodoAnuncio::setAnt(NodoAnuncio *n){
-	anterior = n;
-}
-
 void NodoAnuncio::setDato(Anuncio x){
 	dato = x;
 }
 
-int NodoAnuncio::getDato(){
+Anuncio NodoAnuncio::getDato(){
 	return dato;
 }
 

@@ -1,5 +1,7 @@
 #ifndef CANAL_H_INCLUDED
 #define CANAL_H_INCLUDED
+#include <iostream>
+using namespace std;
 class Canal {
     private:
         string codigo;
@@ -8,8 +10,7 @@ class Canal {
         string tiempoMaximoTransmision;
         string tiempoMinimoTransmision;
         double costoMinuto;
-        Node* anuncios Contratados;
-
+        double costoMinimo;
     public:
         string getCodigo();
         string getNombre();
@@ -17,6 +18,7 @@ class Canal {
         string getTiempoMaximoTransmision();
         string getTiempoMinimoTransmision();
         double getCostoMinuto();
+        double getCostoMinimo();
 
         void setCodigo(string codigo);
         void setNombre(string nombre);
@@ -24,6 +26,7 @@ class Canal {
         void setTiempoMaximoTransmision(string tiempo);
         void setTiempoMinimoTransmision(string tiempo);
         void setCostoMinuto(double costo);
+        void setCostoMinimo(double costo);
 
 
 };

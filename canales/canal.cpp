@@ -8,6 +8,10 @@ double Canal::getCostoMinuto() {
     return costoMinuto;
 }
 
+double Canal::getCostoMinimo() {
+    return costoMinimo;
+}
+
 string Canal::getNombre() {
     return nombre;
 }
@@ -32,8 +36,8 @@ void Canal::setCostoMinuto(double costo) {
     this->costoMinuto = costo;
 }
 
-void Canal::setNombre(string nombre) {
-    this->nombre = nombre;
+void Canal::setCostoMinimo(double costo) {
+    this->costoMinimo = costo;
 }
 
 void Canal::setNombre(string nombre) {
@@ -50,10 +54,6 @@ void Canal::setTiempoMaximoTransmision(string tiempo){
 
 void Canal::setTiempoMinimoTransmision(string tiempo){
     this->tiempoMinimoTransmision = tiempo;
-}
-
-void Canal:: (string tiempo){
-    this->tiempoMaximoTransmision = tiempo;
 }
 
 

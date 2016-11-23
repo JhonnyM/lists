@@ -8,7 +8,7 @@ class NodoCanal{
         NodoCanal(Canal x);
         ~NodoCanal();
         void setDato(Canal x);
-        Canal getDato();
+        Canal getData();
         void setSig(NodoCanal *n);
         void setAnt(NodoCanal *n);
         NodoCanal* getSig();
@@ -17,7 +17,7 @@ class NodoCanal{
 
 
     private:
-        Canal *dato;
+        Canal dato;
         NodoCanal *siguiente;
         NodoCanal *anterior;
 };

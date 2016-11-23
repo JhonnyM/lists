@@ -2,12 +2,14 @@
 #define ANUNCIOCONTRATADO_H_INCLUDED
 class AnuncioContratado{
     private:
-        double costoTotal;
-        // Add a list type here that points to a sublist of tipe Anuncio
-
+        double costoTotal = 0;
+        string codigoAnuncio;
+        // Necesito agregar un puntero al nodo del anuncio en la lista de los Anuncios
+        // Tal vez por medio de los codigos del anuncio
     public:
-        void setCostoTotal;
-        double getCostoTotal;
+        void setCostoTotal(double costoTotal);
+        double getCostoTotal();
+        void actualizarCobro(ListaAnuncios anucios, ListaCanales canales); // Metodo para poder realizar el calculo de los montos por medio del tiempo
 
 };
 
