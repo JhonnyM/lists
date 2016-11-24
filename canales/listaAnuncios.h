@@ -8,7 +8,7 @@ class ListaAnuncios {
         void printList();
         bool findElement(Anuncio x);
         int getSize();
-        //NodoAnuncio getValue();
+        NodoAnuncio getValue();
         //implementar para poder ver la lista de anuncios a vender
     private:
         int size;

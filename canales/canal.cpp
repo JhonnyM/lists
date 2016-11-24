@@ -20,11 +20,11 @@ string Canal::getTelefono() {
     return telefono;
 }
 
-string Canal::getTiempoMaximoTransmision() {
+int Canal::getTiempoMaximoTransmision() {
     return tiempoMaximoTransmision;
 }
 
-string Canal::getTiempoMinimoTransmision() {
+int Canal::getTiempoMinimoTransmision() {
     return tiempoMinimoTransmision;
 }
 
@@ -48,11 +48,11 @@ void Canal::setTelefono(string telefono) {
     this->telefono = telefono;
 }
 
-void Canal::setTiempoMaximoTransmision(string tiempo){
+void Canal::setTiempoMaximoTransmision(int tiempo){
     this->tiempoMaximoTransmision = tiempo;
 }
 
-void Canal::setTiempoMinimoTransmision(string tiempo){
+void Canal::setTiempoMinimoTransmision(int tiempo){
     this->tiempoMinimoTransmision = tiempo;
 }
 

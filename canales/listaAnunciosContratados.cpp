@@ -37,22 +37,45 @@ bool ListaAnunciosContratados::findElement(Anuncio x){
     return resultado;
 }
 
+void ListaAnunciosContratados::setCostoTotal(double costoTotal){
+    this->costoTotal = costoTotal;
+}
+
+double ListaAnunciosContratados::getCostoTotal(){
+    return costoTotal;
+}
+
+NodoAnuncio* ListaAnunciosContratados::getActualValue(){
+    return first;
+}
+// Creo que esto tiene que ir en la parte de la lista de los canales
+/*
 void ListaAnunciosContratados::actualizarCosto(ListaAnuncios *anuncios, ListaCanales *canales){
     //validar el monto a cobrar por el tiempo
     ListaAnuncios *aux = anuncios;
-    ListaCanales *auxCanales;
+    ListaCanales *auxCanales = canales;
 
     double montoAnuncio;
     int tiempoTotal;
-    NodoAnuncio nodoAux;
+    NodoAnuncio nodoAuxAnun;
+    NodoCanal nodoAuxCanal;
     Anuncio anuncio;
-    //recorremos la lista de anuncios para ver el tiempo y calcular el monto
-    while(aux != NULL){
-        nodoAux = aux->getValue();
-        anuncio = nodoAux->getDato();
-        tiempoTotal = tiempoTotal + anuncio->getTiempoDuracion(); // calculamos el tiempo total de los anuncios hay que agregar validaciones
+    Canal canal;
+    // recorremos la lista de canales
+    while(auxCanales != NULL){
+        nodoAuxCanal = auxCanales->getValue();
+        canal = nodoAuxCanal->getData();
+        //recorremos la lista de anuncios para ver el tiempo y calcular el monto
+        while(aux != NULL){
+            nodoAuxAnun = aux->getValue();
+            anuncio = nodoAuxAnun->getDato();
+            // calculamos el tiempo total de los anuncios hay que agregar validaciones
+            tiempoTotal = tiempoTotal + anuncio->getTiempoDuracion();
+        }
+        auxCanales->
     }
 
 
-}
 
+}
+*/

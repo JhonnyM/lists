@@ -6,8 +6,13 @@ class ListaCanales {
         ListaCanales();
         void add(Canal x);
         void printList();
-        bool findElement(Canal x);
+        NodoCanal* findElement(Canal x);
         void destroy();
+        NodoCanal getValue();
+        void addListaAnunciosToCanal(ListaAnunciosContratados y);
+        void actualizarCosto();
+        void imprimeCanal(Canal x);
+        double montoAPagar(Canal canal, int tiempo);
 
     private:
         int size;

@@ -7,24 +7,24 @@ class Canal {
         string codigo;
         string nombre;
         string telefono;
-        string tiempoMaximoTransmision;
-        string tiempoMinimoTransmision;
+        int tiempoMaximoTransmision;
+        int tiempoMinimoTransmision;
         double costoMinuto;
         double costoMinimo;
     public:
         string getCodigo();
         string getNombre();
         string getTelefono();
-        string getTiempoMaximoTransmision();
-        string getTiempoMinimoTransmision();
+        int getTiempoMaximoTransmision();
+        int getTiempoMinimoTransmision();
         double getCostoMinuto();
         double getCostoMinimo();
 
         void setCodigo(string codigo);
         void setNombre(string nombre);
         void setTelefono(string telefono);
-        void setTiempoMaximoTransmision(string tiempo);
-        void setTiempoMinimoTransmision(string tiempo);
+        void setTiempoMaximoTransmision(int tiempo);
+        void setTiempoMinimoTransmision(int tiempo);
         void setCostoMinuto(double costo);
         void setCostoMinimo(double costo);
 

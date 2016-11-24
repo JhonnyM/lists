@@ -1,5 +1,7 @@
 #ifndef LISTAANUNCIOSCONTRATADOS_H_INCLUDED
 #define LISTAANUNCIOSCONTRATADOS_H_INCLUDED
+#include "anuncio.h"
+#include "nodoAnuncio.h"
 class ListaAnunciosContratados {
     public:
         ListaAnunciosContratados();
@@ -7,7 +9,9 @@ class ListaAnunciosContratados {
         void printList();
         void addInOrder(Anuncio x);
         bool findElement(Anuncio x);
-        void actualizarCosto(ListaAnuncios anuncios, ListaCanales canales);
+        void setCostoTotal(double x);
+        double getCostoTotal();
+        NodoAnuncio* getActualValue();
 
     private:
         int size;

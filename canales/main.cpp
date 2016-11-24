@@ -41,6 +41,8 @@ int main()
     anuncios.add(anuncio2);
 
     anunciosContrados.add(anuncio2);
+    // Agregamos una lista de Anuncios contratados al Canal
+    canales.addListaAnunciosToCanal(anunciosContrados);
 
     cout << "Informacion del canal: " << "Nombre: "<< canal6.getNombre() << " Telefono: " << canal6.getTelefono() << endl;
     cout << "Informacion del anuncio: " << "Nombre: "<< anuncio.getNombreEmpresa() << " Codigo: " << anuncio.getCodigoAnuncio() << endl;
@@ -53,4 +55,9 @@ int main()
     cout << "-----------------------------------" << endl;
     cout << "Lista de anuncios contratados: " << endl;
     anunciosContrados.printList();
+    cout << "-----------------------------------" << endl;
+    cout << "Metodo imprime canal: " << endl;
+    // revisar este metodo me esta danto un problema de memoria
+    // hay que agregar una validacion y verificar si la lista de los anuncios contratados esta vacia
+    canales.imprimeCanal(canal6);
 }

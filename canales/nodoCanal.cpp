@@ -33,3 +33,11 @@ NodoCanal* NodoCanal::getSig(){
 NodoCanal* NodoCanal::getAnt(){
 	return anterior;
 }
+
+ListaAnunciosContratados* NodoCanal::getAnunciosContratados(){
+    return anunciosContratados;
+}
+
+void NodoCanal::setAnunciosContratados(ListaAnunciosContratados* n){
+    anunciosContratados = n;
+}

@@ -1,7 +1,7 @@
 #ifndef NODOCANAL_H_INCLUDED
 #define NODOCANAL_H_INCLUDED
 #include "canal.h"
-
+#include "listaAnunciosContratados.h"
 class NodoCanal{
     public:
         NodoCanal();
@@ -13,13 +13,15 @@ class NodoCanal{
         void setAnt(NodoCanal *n);
         NodoCanal* getSig();
         NodoCanal* getAnt();
-
+        ListaAnunciosContratados* getAnunciosContratados();
+        void setAnunciosContratados(ListaAnunciosContratados *n);
 
 
     private:
         Canal dato;
         NodoCanal *siguiente;
         NodoCanal *anterior;
+        ListaAnunciosContratados *anunciosContratados;
 };
 
 
